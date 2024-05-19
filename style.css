@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Afacad', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262a2f;
+}
+
+.content {
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    height: fit-content;
+    width: 400px;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    padding: 20px 30px;
+}
+
+.val {
+    margin: 10px 0px;
+    width: 350px;
+    padding: 5px;
+    outline: 1px solid #B6C4B6;
+    border: none;
+}
+
+.generate {
+    width: 350px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #fff;
+    background-color: #3887BE;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top:5px;
+}
+
+.qrcode {
+    margin: 10px 0px 10px 0px;
+    display: none;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+    transition-duration: 10s;
+    transition-delay: 0.5s;
+    text-align: center;
+}
+
+.qrcodeval {
+    height: fit-content;
+    width: fit-content;
+}
+
+.qrcodeval1 {
+    border: 1px solid #B6C4B6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(5px);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.shakes {
+    animation: shake 0.5s linear;
+}
